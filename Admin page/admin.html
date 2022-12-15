@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Page</title>
-    <link rel="stylesheet" href="admin.css">
-</head>
-<body>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
     <nav>
-        <div>
-            <img src="logo.png" alt="logo">
-          <h2>Edge Tech</h2>
-        </div>
-      </nav>
-      <div id="top">
-        <div id="left">
-            <div class="row">
-                  <h1>Admin Panel</h1>
-                  <button class="show-user-details button-primary buttons">Show User Details</button>
-                  <hr>
-                  
-                  <button class="show-form-submissions button-primary buttons">Show Form Submissions</button>
-                  <hr>
-                  
-                  <button class="edit-courses button-primary buttons">Edit Courses</button>
+      <div>
+        <img src="logo.png" alt="logo" />
+        <h2>Edge Tech</h2>
+      </div>
+    </nav>
+    <div id="top">
+      <div id="left">
+        <div class="row">
+          <h1>Admin Panel</h1>
+          <button class="show-user-details button-primary buttons">
+            Show User Details
+          </button>
+          <hr />
 
-                  <div class="columns eight main">
-                    <!-- <div class="notifications-wrapper" id="notifications-wrapper"></div> -->
-                    <div class="data-list-wrapper" id="data-list-wrapper"></div>
-                  </div>
-              </div>
+          <button class="show-form-submissions button-primary buttons">
+            Show Form Submissions
+          </button>
+          <hr />
+
+          <button class="show-courses button-primary buttons">
+            Show Courses
+          </button>
+          <hr>
+
+          <!-- <label for="pages">Reduce Page Limit</label> -->
+          <select name="pages" id="page-limit">
+            <option value="5">---------SELECT PAGE LIMIT-------</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+          </select>
         </div>
       </div>
-</body>
+      <div class="columns eight main">
+        <h1>Data List</h1>
+        <div class="notifications-wrapper" id="notifications-wrapper">
+          <p>Couldn't Found Data, Try again after some time</p>
+        </div>
+        <div class="data-list-wrapper">
+          <!-- Showing Data here -->
+        </div>
+      </div>
+    </div>
+    <script src="admin.js"></script>
+  </body>
 </html>
