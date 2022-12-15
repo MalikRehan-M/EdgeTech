@@ -57,7 +57,6 @@
     border: 1px solid black;
     background-color:white;
     border-radius: 10px;
-    
 }
 .dropdown_menu ul{
     display: block;
@@ -69,7 +68,6 @@
 .dropdown_menu ul li{
     width: 150px;
     padding: 10px;
-    /* position: left; */
 }
 .dropdown_menu ul li a{
 color: black;
@@ -95,17 +93,20 @@ color: black;
     margin-top: 100px;
 }
 .cert_cards{
-    border: 1px solid;
-    padding-left: 20px;
-    padding-right: 10px;
+   padding: 20px;
+    padding-bottom: 10px;
+    box-shadow: rgba(19, 126, 134, 0.4) 5px 5px, rgba(31, 136, 165, 0.3) 10px 10px, rgba(92, 198, 239, 0.2) 15px 15px, rgba(85, 211, 228, 0.1) 20px 20px, rgba(131, 220, 232, 0.05) 25px 25px;
+    transition: 1s;
+    border-radius: 8px;
+
 }
 .certification_box{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 50px;
-    border:1px solid red;
+    gap: 70px;
     width: 70%;
     margin:auto;
+    margin-top: 100px;
 }
 .hours{
     font-weight: bold;
@@ -113,4 +114,30 @@ color: black;
 }
 .lesson{
     display:inline;
+}
+.btn_cont{
+    align-content: flex-end;
+}
+.btn{
+    color: white;
+    width:100%;
+    height:40px;
+    border-radius:5px;
+    border: 0px;
+    background-color: #006064;
+    font-weight: bold;
+    position: relative;
+}
+.cert_cards:hover{
+    transform: scale(1.1);
+}
+.cert_cards:hover .btn {
+    background-color: rgb(213, 105, 22);
+    transition: 0.8s;
+}
+.cert_cards .btn:hover{
+    background-color: pink;
+}
+.btn_cont{
+    /* background-color: red; */
 }
