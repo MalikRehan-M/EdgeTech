@@ -1,0 +1,112 @@
+/* small screen*/
+/* @media all and (min-width:350px) and (max-width:749px){ 
+    .top_banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog_cards_box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        background-color: yellow;
+    }
+} */
+/* medium screen */
+/* @media all and (min-width:750px) and (max-width:1000px){ 
+    .top_banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog_cards_box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: yellow;
+    }
+}  */
+
+
+body{
+    font-family: 'Mukta', sans-serif;
+ }
+ .top_banner{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    
+ }
+ .image>img{
+    width: 100%;
+ }
+ .image{
+    width: 48%;
+    background-color: antiquewhite;
+ }
+ .featured_post{
+    width:48%;
+ }
+ .top_text{
+    padding: 20px;
+    margin-top: -50px;
+    line-height: 35px;
+ }
+ #orange{
+    width: 100%;
+    height: 2px;
+    margin-left: 0px;
+    border: none;
+    text-decoration: solid;
+    background-color: rgb(255, 116, 66);
+ }
+ .grey{
+    width: 100%;
+    height: 1px;
+    margin-left: 0px;
+    border: none;
+    text-decoration: solid;
+    background-color: rgb(188, 185, 185)
+ }
+ .blog_cards_box{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+ }
+ .blog_card>img{
+    width: 100%;
+ }
+ #marketing{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+ }
+ #mark_box{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+ }
+ #mark_box>h1{
+    display: inline-block;
+ }
+
+ #sales_box{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+ }
+  #sales{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+ }
+
+ #sales_card{
+    display: flex;
+ }
+ #sales_card>img{
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+    margin-right: 20px;
+ }
