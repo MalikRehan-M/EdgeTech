@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2E475D;
 }
 
 
@@ -41,11 +42,14 @@ nav>div>h2 {
 #top {
     width: 100%;
     height: 543px;
-    background-color: #2E475D;
+    display: flex;
+    justify-content: space-around;
     padding-bottom: 60px;
     margin-top: 54px;
 }
 
+
+/* Left Side */
 #left {
     margin-left: 20px;
     width: fit-content;
@@ -79,4 +83,108 @@ nav>div>h2 {
 
 hr {
     margin: 30px 0px;
+}
+
+
+
+/* Right Side (Data Render Area) */
+.main {
+    width: 70%;
+    margin-top: 20px;
+}
+
+.main > h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+.card-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    height: fit-content;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: rgb(242, 241, 241);
+}
+
+.card-wrapper > h2 {
+    color: #2E475D;
+    font-weight: 600;
+    text-align: left;
+    margin: 5px auto;
+}
+
+.card-wrapper > hr {
+    margin: 20px 0px;
+
+}
+
+.card-wrapper > p {
+    color: #2E475D;
+    margin: 5px auto;
+
+}
+
+.card-wrapper > p+p+p {
+    margin: 20px 0px;
+}
+
+.card-wrapper > p > span {
+    color: rgb(42, 158, 146);
+    margin-left: 15px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.list-buttons {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.list-buttons > button {
+    background-color: #2E475D;
+    border: 0px;
+    border-radius: 5px;
+    margin: 5px auto;
+    padding: 15px 85px;
+    color: white;
+    font-size: 16px;
+}
+
+.list-buttons > button:hover {
+    cursor: pointer;
+    background-color: #FF5C35;
+    color: black;
+    font-weight: 500;
+}
+
+
+/* Page Limit */
+
+#page-limit{
+    padding: 10px 0px;
+    font-size: 15px;
+}
+
+
+
+
+/* Notification Section */
+.notifications-wrapper{
+    border: 2px solid green;
+    width: fit-content;
+    height: fit-content;
+    display: none;
+    padding: 0px 80px;
+    color: rgb(205, 205, 205);
+    font-size: 20px;
+    background-color: #ad6655;
+    border-radius: 10px;
+    margin: auto;
 }
