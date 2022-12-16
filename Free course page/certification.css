@@ -1,6 +1,7 @@
  body{
     font-family: 'Mukta', sans-serif;
  }
+
 #top_banner{
     background-color: #4DB6AC;
     text-align: center;
@@ -25,7 +26,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 5%;
-    padding-left: 200px;
 }
 .menu_bar>ul{
     text-decoration: center;
@@ -66,7 +66,7 @@
     padding-right: 20px;
 }
 .dropdown_menu ul li{
-    width: 150px;
+    /* width: 150px; */
     padding: 10px;
 }
 .dropdown_menu ul li a{
@@ -98,6 +98,7 @@ color: black;
     box-shadow: rgba(19, 126, 134, 0.4) 5px 5px, rgba(31, 136, 165, 0.3) 10px 10px, rgba(92, 198, 239, 0.2) 15px 15px, rgba(85, 211, 228, 0.1) 20px 20px, rgba(131, 220, 232, 0.05) 25px 25px;
     transition: 1s;
     border-radius: 8px;
+    background-color: white;
 
 }
 .certification_box{
@@ -138,6 +139,49 @@ color: black;
 .cert_cards .btn:hover{
     background-color: pink;
 }
-.btn_cont{
-    /* background-color: red; */
+.cont{
+    background-color: #e4f0f0;
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.page_cont{
+    width: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.page_cont>button{
+    font-size: larger;
+    margin-right: 10px;
+    border: none;
+    color: #006064;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+.page_cont>button:hover{
+    background-color: #a8e4e6;
+}
+/* small screen*/
+@media screen and (min-width: 350px) and (max-width: 649px){
+
+    .certification_box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .menu_bar{
+        display: none;
+    }
+    
+}
+/* small screen */
+@media screen and (min-width: 650px) and (max-width: 1000px){
+    .certification_box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .menu_bar{
+        display: none;
+    }
+
+    
 }

@@ -1,4 +1,12 @@
 
+async function fetchAllData(){
+  let data= await fetch("https://639ac82bd5141501973ed8b0.mockapi.io/edgeTech/courses");
+  let total= await data.json();
+  totalPage=Math.ceil((total.length)/9);
+  renderButton(totalPage)
+}
+fetchAllData()
+
 async function fetchData(page){
     let result= await fetch(`https://639ac82bd5141501973ed8b0.mockapi.io/edgeTech/courses?page=${page}&limit=9`)
     let obj= await result.json();
@@ -42,15 +50,20 @@ fetchData(1);
   }
 
   let page_cont= document.querySelector(".page_cont")
-  let page1=document.createElement("button");
-  page1.innerText="1"
-  let page1=document.createElement("button");
-  page1.innerText="2"
-  let page1=document.createElement("button");
-  page1.innerText="3"
-  let page1=document.createElement("button");
-  page1.innerText="4"
-  page_cont.append(page1,page2)
+
+  function renderButton(page){
+  for(let i=1; i<=page; i++){
+    let page = document.createElement("button");
+    page.innerText=`${i}`
+    page.addEventListener("click",()=>{
+      fetchData(i);
+    })
+    page_cont.append(page)
+  }
+}
+
+
+
 
   
 
