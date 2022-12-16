@@ -117,6 +117,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-size-adjust: 10px;
     font-size: larger;
+    margin-top: 200px;
 
 }
 
@@ -128,7 +129,7 @@
 .bottom{
     margin: auto;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .bottomMain{
     /* border: 5px solid blue; */
