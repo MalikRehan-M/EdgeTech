@@ -7,6 +7,5 @@
 5. Malikrehan Meeranaik 
 
 
-
 # Our Server Link
-https://different-pocketbook-bear.cyclic.app
+https://639ac82bd5141501973ed8b0.mockapi.io/edgeTech/courses
