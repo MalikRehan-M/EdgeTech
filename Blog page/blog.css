@@ -1,112 +1,260 @@
+body {
+   font-family: 'Mukta', sans-serif;
+}
+
+.top_banner {
+   display: flex;
+   justify-content: space-between;
+   width: 70%;
+   margin: auto;
+
+}
+
+.image>img {
+   width: 100%;
+}
+
+.image {
+   width: 48%;
+   background-color: antiquewhite;
+}
+
+.featured_post {
+   width: 48%;
+}
+
+.top_text {
+   padding: 20px;
+   margin-top: -50px;
+   line-height: 35px;
+}
+
+#orange {
+   width: 100%;
+   height: 2px;
+   margin-left: 0px;
+   border: none;
+   text-decoration: solid;
+   background-color: rgb(255, 116, 66);
+}
+
+.grey {
+   width: 100%;
+   height: 1px;
+   margin-left: 0px;
+   border: none;
+   text-decoration: solid;
+   background-color: rgb(188, 185, 185)
+}
+
+.blog_cards_box {
+   width: 70%;
+   margin: auto;
+   margin-top: 50px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+}
+
+.blog_card {
+   transition: 0.5s;
+}
+
+.blog_card:hover {
+   transform: scale(1.1);
+}
+
+.blog_card>img {
+   width: 100%;
+}
+
+#marketing {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+}
+
+#mark_box {
+   width: 70%;
+   margin: auto;
+   margin-top: 100px;
+}
+
+#mark_box>h1 {
+   display: inline-block;
+}
+
+#sales_box {
+   width: 70%;
+   margin: auto;
+   margin-top: 100px;
+}
+
+#sales {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+}
+
+#sales_card {
+   display: flex;
+}
+
+#sales_card>img {
+   height: 150px;
+   width: 150px;
+   margin-top: 30px;
+   margin-right: 20px;
+}
+
+#mid_banner {
+   display: flex;
+   border: 7px solid rgb(239, 206, 153);
+   width: 85%;
+   right: 0px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   border-top-left-radius: 300px;
+   background-color: rgb(255, 244, 227);
+   transition: 0.5s;
+
+}
+
+#mid_banner:hover {
+   transform: scale(1.1);
+}
+
+.mid_banner_text {
+   margin-left: 20px;
+   vertical-align: middle;
+   padding-top: 30px;
+   margin-right: 150px;
+}
+
+.mid_banner_text>button {
+   background-color: rgb(255, 116, 66);
+   color: white;
+   height: 30px;
+   font-weight: bold;
+   border: none;
+   border-radius: 3px;
+   padding: 0px 15px;
+}
+
+.mid_img {
+   margin-left: 200px;
+}
+
+.mid_img>img {
+   height: 270px;
+   width: 450px;
+}
+
+.bottom_blogs {
+   width: 70%;
+   margin: auto;
+}
+
+.bottom_blogs>div {
+   margin-top: 30px;
+   width: 100%;
+}
+
+.bottom_blogs>div>div {
+   background-color: white;
+}
+
+.bottom_blogs>div>div>div {
+   margin-top: -10px;
+}
+
+.explore_box {
+   width: 70%;
+   margin: auto;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.expore_more_box {
+   display: flex;
+   justify-content: space-between;
+   flex: wrap;
+   width: 100%;
+   margin-top: 30px;
+}
+
+.explore_more_card {
+   width: 30%;
+   background-color: rgb(247, 252, 255);
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   transition: 0.5s;
+}
+
+.explore_more_card>img {
+   width: 100%;
+}
+
+.explore_more_card:hover {
+   transform: scale(1.1);
+}
+
 /* small screen*/
-/* @media all and (min-width:350px) and (max-width:749px){ 
-    .top_banner{
-        display: flex;
-        flex-direction: column;
-    }
-    .blog_cards_box{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        background-color: yellow;
-    }
-} */
+@media all and (min-width:350px) and (max-width:749px) {
+   .top_banner {
+      display: flex;
+      flex-direction: column;
+   }
+
+   #marketing {
+      display: flex;
+      flex-direction: column;
+   }
+
+   #sales {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .blog_cards_box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   #mid_banner {
+      display: none;
+   }
+
+
+}
+
 /* medium screen */
-/* @media all and (min-width:750px) and (max-width:1000px){ 
-    .top_banner{
-        display: flex;
-        flex-direction: column;
-    }
-    .blog_cards_box{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        background-color: yellow;
-    }
-}  */
+@media all and (min-width:750px) and (max-width:1000px) {
+   .top_banner {
+      display: flex;
+      flex-direction: column;
+   }
 
+   .blog_cards_box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+   }
 
-body{
-    font-family: 'Mukta', sans-serif;
- }
- .top_banner{
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    margin: auto;
-    
- }
- .image>img{
-    width: 100%;
- }
- .image{
-    width: 48%;
-    background-color: antiquewhite;
- }
- .featured_post{
-    width:48%;
- }
- .top_text{
-    padding: 20px;
-    margin-top: -50px;
-    line-height: 35px;
- }
- #orange{
-    width: 100%;
-    height: 2px;
-    margin-left: 0px;
-    border: none;
-    text-decoration: solid;
-    background-color: rgb(255, 116, 66);
- }
- .grey{
-    width: 100%;
-    height: 1px;
-    margin-left: 0px;
-    border: none;
-    text-decoration: solid;
-    background-color: rgb(188, 185, 185)
- }
- .blog_cards_box{
-    width: 70%;
-    margin: auto;
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
- }
- .blog_card>img{
-    width: 100%;
- }
- #marketing{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
- }
- #mark_box{
-    width: 70%;
-    margin: auto;
-    margin-top: 100px;
- }
- #mark_box>h1{
-    display: inline-block;
- }
+   #marketing {
+      display: flex;
+      flex-direction: column;
 
- #sales_box{
-    width: 70%;
-    margin: auto;
-    margin-top: 100px;
- }
-  #sales{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
- }
+   }
 
- #sales_card{
-    display: flex;
- }
- #sales_card>img{
-    height: 150px;
-    width: 150px;
-    margin-top: 30px;
-    margin-right: 20px;
- }
+   #sales {
+      display: flex;
+      flex-direction: column;
+
+   }
+
+   #mid_banner {
+      display: none;
+   }
+
+}
