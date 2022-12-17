@@ -292,3 +292,50 @@ function renderPageButtons(text, id) {
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
+
+
+
+// // // // // // // // // Delete Data Section // // // // // // // // // // // // //
+
+
+async function deleteFunction(data, link) {
+    try {
+        let res;
+        if (link == 1) {
+            res = await fetch(`${course_URL}/${data}`, {
+                method: "DELETE"
+            });
+            pageNot.innerText = "Course Successfully Deleted";
+            notification(pageNot)
+            Fetching(course_URL)
+        } else if (link == 2) {
+            res = await fetch(`${demoForm_URL}/${data}`, {
+                method: "DELETE"
+            });
+            pageNot.innerText = "Form Successfully Deleted";
+            notification(pageNot)
+            Fetching(demoForm_URL)
+        } else {
+            res = await fetch(`${users_data_URL}/${data}`, {
+                method: "DELETE"
+            });
+            pageNot.innerText = "User Successfully Deleted";
+            notification(pageNot)
+            Fetching(users_data_URL)
+        }
+    } catch (error) {
+        notification()
+    }
+}
+
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+
+
+
+// function editDataFunction() {
+//     let editEnable = document.querySelectorAll(".card-wrapper");
+//     for(let enable of editEnable){
+//         enable
+//     }
+//     console.log(editEnable[0].children[1].removeAttribute("disabled"))
+// }
