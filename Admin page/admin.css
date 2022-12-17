@@ -49,6 +49,16 @@ nav>div>h2 {
 }
 
 
+/* @media screen and (min-width: 200px) and (max-width: 400px){
+    nav > div {
+        width: 80%;
+    }
+    nav > div > h2 {
+        font-size: 22px;
+    }
+} */
+
+
 /* Left Side */
 #left {
     margin-left: 20px;
@@ -72,6 +82,7 @@ nav>div>h2 {
     font-weight: 600;
     color: white;
     padding: 10px 0px;
+    margin-bottom: 10px;
     background-color: #FF5C35;
     border: 0px;
     border-radius: 5px;
@@ -108,38 +119,20 @@ hr {
     height: fit-content;
     padding: 8px 15px;
     border-radius: 8px;
-    background-color: rgb(242, 241, 241);
+    background-color: white;
 }
 
-.card-wrapper > h2 {
-    color: #2E475D;
-    font-weight: 600;
-    text-align: left;
-    margin: 5px auto;
+.card-wrapper > input {
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
-
-.card-wrapper > hr {
-    margin: 20px 0px;
-
-}
-
-.card-wrapper > p {
-    color: #2E475D;
-    margin: 5px auto;
-
-}
-
-.card-wrapper > p+p+p {
-    margin: 20px 0px;
-}
-
-.card-wrapper > p > span {
-    color: rgb(42, 158, 146);
-    margin-left: 15px;
+.card-wrapper > span {
     font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
+    color: darkslategray;
 }
+
 
 .list-buttons {
     margin: auto;
@@ -188,3 +181,30 @@ hr {
     border-radius: 10px;
     margin: auto;
 }
+
+
+/* Pagination */
+.pagination-section {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.pagination-section > button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px 5px;
+    background-color: #fc7350;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 0px;
+}
+
+.pagination-section > button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
