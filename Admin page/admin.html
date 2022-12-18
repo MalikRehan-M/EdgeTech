@@ -10,7 +10,7 @@
   <body>
     <nav>
       <div>
-        <img src="logo.png" alt="logo" />
+        <img id="logo" src="logo.png" alt="logo" />
         <h2>Edge Tech</h2>
       </div>
     </nav>
@@ -23,10 +23,10 @@
           </button>
           <hr />
 
-          <button class="show-form-submissions button-primary buttons">
+          <!-- <button class="show-form-submissions button-primary buttons">
             Show Form Submissions
           </button>
-          <hr />
+          <hr /> -->
 
           <button class="show-courses button-primary buttons">
             Show Courses
@@ -36,9 +36,8 @@
           </button>
           <hr>
 
-          <!-- <label for="pages">Reduce Page Limit</label> -->
           <select name="pages" id="page-limit">
-            <option value="5">---------SELECT PAGE LIMIT-------</option>
+            <option value="5">---------SELECT PAGE LIMIT--------</option>
             <option value="5">5</option>
             <option value="10">10</option>
             <option value="15">15</option>
@@ -49,7 +48,7 @@
       <div class="columns eight main">
         <h1>Data List</h1>
         <div class="notifications-wrapper" id="notifications-wrapper">
-          <p>Couldn't Found Data, Try again after some time</p>
+          <p>Couldn't Found Data! Try again after some time</p>
         </div>
         <div class="data-list-wrapper">
           <!-- Showing Data in this div -->

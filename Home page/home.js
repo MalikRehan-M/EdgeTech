@@ -8,11 +8,11 @@ let orgebtn=document.getElementsByClassName("orangebtn");
 let orgebtn2=document.getElementsByClassName("orangebtn2");
 
 
+
 btn.addEventListener("click",()=>{
     console.log(btnDiv.style.marginLeft)
     if(btnDiv.style.marginLeft== "2px" || btnDiv.style.marginLeft==""){
         btnDiv.style.marginLeft = "15px"
-        orgebtn.id="bluebtn"
     }
     else if(btnDiv.style.marginLeft == "15px"){
         btnDiv.style.marginLeft ="2px"
@@ -26,4 +26,9 @@ serachicon.addEventListener("click",()=>{
     document.querySelector("#serachbar").focus();
     document.querySelector("#serachbar").setAttribute("placeholder","search...")
 })
+
+document.getElementById("logo").addEventListener("click",()=>{
+    window.location.href="/index.html"
+})
+
 
