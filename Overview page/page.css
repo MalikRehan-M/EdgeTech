@@ -1,5 +1,6 @@
 * {
     background-color: #f6f9fc;
+    border-radius: 20px;
 }
 
 
@@ -14,7 +15,7 @@
     height: 10%;
     /* border: 2px solid green; */
     margin-left: 100px;
-    padding: 30px;
+    padding: 20px;
 }
 
 
@@ -22,6 +23,15 @@
     /* border: 2px solid rgb(190, 40, 40); */
     width: 100%;
 }
+
+@media screen and (min-width:400px) and (max-width:600px) {
+    .main>h1{
+        width: 100%;
+    }
+    
+}
+
+
 
 .main>h1 {
     color: #2e475d;
@@ -66,9 +76,12 @@
 
 
 }
+/* midButton */
+ 
+   
 
 .para>div>button {
-    /* border: 2px solid rgb(179, 24, 24); */
+    /* border: 2px solid rgb(26, 24, 24); */
     margin: auto;
     padding: 10px;
     width: 180px;
@@ -92,6 +105,7 @@
 }
 
 .para>div>.btn2 {
+    margin-left: 30px;
     border: 2px solid #FF3D00;
     color: whitesmoke;
     background-color: #FF3D00;
@@ -113,11 +127,12 @@
     padding: 20px;
     margin: auto;
     text-align: center;
-    color: #2e475d;
+    color: #404e55;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-size-adjust: 10px;
     font-size: larger;
-    margin-top: 200px;
+    margin-top: 100px;
+    background-color:#f6f9fc;
 
 }
 
@@ -126,10 +141,12 @@
     border: 5px solid green;
 } */
 
+
 .bottom{
     margin: auto;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
+  
 }
 .bottomMain{
     /* border: 5px solid blue; */
@@ -141,9 +158,14 @@
     height: auto !important;
    margin-block-start: 10px;
    margin-block-end: 10px; 
+   transition: all 1s;
+   border-radius: 20px;
+   /* opacity: 0; */
+   /* transform: matrix3d(3); */
 }
 .bottom>h2,h5,p,.card-header,.accordion-button{
     color: #2e475d;
+
 }
 
 .orange{
@@ -169,3 +191,50 @@
    
 }
 
+div{
+    /* border: 2px solid #2e475d; */
+    /* color: whitesmoke; */
+    /* background-color:#e9ecee ; */
+    background-color: #f6f9fc;
+    border-radius: 15px;
+    
+}
+.checkbox{
+    border-radius: 20px;
+}
+
+
+/* footer */
+#darkBlue>p{
+    margin-top: 50px;
+    text-align: center;
+    background-color: #213343;
+    color: whitesmoke;
+    font-size: 18px;
+    /* align-items: center; */
+}
+
+.legal>h4{
+    margin-top: 0;
+    text-align: center;
+    color:whitesmoke;
+    font-size: 18px;
+    background-color: #213343;
+    
+}
+.legal{
+    /* margin-top:50px; */
+    background-color: #213343;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    justify-content: space-evenly;
+}
+#darkBlue{
+    height: 150px;
+    text-align: center;
+    background-color: #213343;
+    border-radius: 0px;
+    padding-top: 10px;
+}
