@@ -1,9 +1,12 @@
-// let midClick= document.querySelector('#midP');
-
-// midClick.addEventListener('click', myFun)
-//     document.querySelector('.midP').addEventListener('click', myFun)
-// function myFun() {
-//     console.log('midClick');
-// window.location.href=index.html;
-// };
-
+document.querySelector(".btn2").addEventListener("click",()=>{
+    window.location.href="/Home page/freedemo.html"
+})
+document.querySelector(".btn1").addEventListener("click",()=>{
+    window.location.href="/Home page/login.html"
+})
+document.querySelector(".orange").addEventListener("click",()=>{
+    window.location.href="/Home page/freedemo.html"
+})
+document.getElementById("logo").addEventListener("click",()=>{
+    window.location.href="/index.html"
+})

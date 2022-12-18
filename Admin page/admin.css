@@ -123,8 +123,9 @@ hr {
 }
 
 .card-wrapper > input {
-    width: 100%;
-    padding: 10px 0px;
+    width: 96%;
+    background-color: whitesmoke;
+    padding: 10px 10px;
     margin-bottom: 10px;
     font-size: 15px;
 }

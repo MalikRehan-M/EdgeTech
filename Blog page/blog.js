@@ -22,4 +22,7 @@ function preImg(){
     sliderMainP.prepend(itemP[itemP.length-1])
     // console.log("pre")
 }
+document.getElementById("logo").addEventListener("click",()=>{
+    window.location.href="/index.html"
+})
 

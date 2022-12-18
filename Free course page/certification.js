@@ -62,6 +62,9 @@ fetchData(1);
   }
 }
 
+document.getElementById("logo").addEventListener("click",()=>{
+  window.location.href="/index.html"
+})
 
 
 
