@@ -8,5 +8,12 @@
 
 
 
-# Our Server Link
-https://different-pocketbook-bear.cyclic.app
+# Cyclic Server Link
+https://delightful-puce-coyote.cyclic.app/users
+ 
+# Mock-Api link
+https://639ac82bd5141501973ed8b0.mockapi.io/edgeTech/courses
+
+#Admin Credentials 
+email : admin@edgetech.com
+pass : adminedgetech
