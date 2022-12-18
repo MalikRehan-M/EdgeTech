@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/skeleton.css">
+    <link rel="stylesheet" href="./styles/todos.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h1>Todo App</h1>
+          <p>Cute little app</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns four sidebar-one" id="sidebar-one">
+
+          <h4>Register User</h4>
+          <input type="text" id="register-user-username" class="u-full-width" placeholder="username" />
+          <input type="text" id="register-user-firstname" class="u-full-width" placeholder="firstname" />
+          <input type="text" id="register-user-lastname" class="u-full-width" placeholder="lastname" />
+          <input type="text" id="register-user-email" class="u-full-width" placeholder="email" />
+          <input type="password" id="register-user-passowrd" class="u-full-width" placeholder="password" />
+          <input type="text" id="register-user-avatar" class="u-full-width" placeholder="avatar image url" value="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/762.jpg"/>
+          <input type="number" id="register-user-level" class="u-full-width" placeholder="Department Number" />
+          <button id="register-user" class="u-full-width button button-primary">Register User</button>
+          <hr>
+
+          <h4>Log in an existing User</h4>
+          <input type="text" id="login-user-username" class="u-full-width" placeholder="username" />
+          <input type="password" id="login-user-passowrd" class="u-full-width" placeholder="password" />
+          <button id="login-user" class="u-full-width button button-primary">Login User</button>
+          <hr>
+
+          <button id="fetch-todos" class="u-full-width button button-primary">fetch todos</button>
+          <hr>
+
+          <h4>Update User</h4>
+          <input type="text" id="update-user-username" class="u-full-width" placeholder="username" />
+          <input type="text" id="update-user-firstname" class="u-full-width" placeholder="firstname" />
+          <input type="text" id="update-user-lastname" class="u-full-width" placeholder="lastname" />
+          <input type="text" id="update-user-email" class="u-full-width" placeholder="email" />
+          <input type="password" id="update-user-passowrd" class="u-full-width" placeholder="password" />
+          <input type="text" id="update-user-avatar" class="u-full-width" placeholder="avatar image url" value="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/762.jpg"/>
+          <input type="number" id="update-user-level" class="u-full-width" placeholder="Department Number" />
+          <button id="update-user" class="u-full-width button button-primary">Register User</button>
+          <hr>
+
+          <h4>Patch User Department</h4>
+          <input type="number" id="patch-user-id" class="u-full-width" placeholder="user id" />
+          <input type="text" id="patch-user-username" class="u-full-width" placeholder="username"/>
+          <input type="number" id="patch-user-level" class="u-full-width" placeholder="Department Number" />
+          <button id="patch-user" class="u-full-width button button-primary">Register User</button>
+          <hr>
+
+        </div>
+          <div class="columns eight main">
+            <div class="data-list-wrapper" id="data-list-wrapper"></div>
+            <div class="pagination-wrapper" id="pagination-wrapper">Pagination</div>
+          </div>
+      </div>
+    </div>
+
+    <script src="./scripts/todos.js"></script>
+  </body>
+</html>

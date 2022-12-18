@@ -9,4 +9,3 @@
 
 
 # Our Server Link
-https://different-pocketbook-bear.cyclic.app

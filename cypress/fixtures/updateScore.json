@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Saini",
+    "batch": "Phoenix",
+    "section": "C",
+    "score": 6,
+    "image": "https://allworldpm.com/wp-content/uploads/2016/10/230x230-avatar-dummy-profile-pic.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Pavan",
+    "batch": "Ninja",
+    "section": "A",
+    "score": 3,
+    "image": "https://allworldpm.com/wp-content/uploads/2016/10/230x230-avatar-dummy-profile-pic.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Praveen",
+    "batch": "Samurai",
+    "section": "B",
+    "score": 5,
+    "image": "https://allworldpm.com/wp-content/uploads/2016/10/230x230-avatar-dummy-profile-pic.jpg"
+  }
+]

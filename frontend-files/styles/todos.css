@@ -1,0 +1,158 @@
+/* reusable */
+
+.capsule {
+  height: 26px;
+  line-height: 26px;
+  border-radius: 10px;
+}
+
+
+
+#navbar {
+  border: 1px solid green;
+
+}
+
+#main_container {
+  display: flex;
+}
+
+.container {
+  margin-bottom: 80px;
+}
+
+.sidebar-one {
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.student {
+  width: 260px;
+  height: 450px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.student img {
+  width: 80%;
+  height: 40%;
+  border-bottom: 1px solid gray;
+}
+
+.student div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* cards */
+
+/* card list */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  gap: 4%;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 576px) {
+  .card {
+    flex-basis: 38%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-basis: 100%;
+  }
+}
+
+/* individual card  */
+.card {
+  background-color: white;
+  font-size: 20px;
+  padding: 15px;
+
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+}
+
+.card__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.card__img {
+  margin-bottom: 8px;
+  height: 120px;
+}
+
+.card__img img {
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__link {
+  font-family: "verdana", "sans-serif";
+  font-size: 15px;
+  color: #1c1c1c;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card__img {
+    flex-basis: 33%;
+    margin: 0;
+    height: auto;
+    max-height: 120px;
+  }
+
+  .card__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.card__title {
+  margin: 0;
+  color: #1c1c1c;
+  font-size: 18px;
+}
+
+.card__img {
+  /* background-color: dodgerblue; */
+}
+
+.card__description {
+  font-size: 15px;
+  color: #696969;
+  line-height: 1.5;
+}
+
+/* pagination section */
+.pagination-wrapper {
+  border: 1px dashed #E1E1E1;
+  border-radius: 4px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}

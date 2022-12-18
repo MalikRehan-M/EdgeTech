@@ -1,0 +1,57 @@
+### GET all recipes
+GET http://localhost:9090/recipeIngredients?_limit=10&_page=1
+
+### GET all todos
+
+GET http://localhost:9090/todos
+
+### GET all users
+
+GET http://localhost:9090/users/54
+
+### Register a new user
+POST http://localhost:9090/user/register
+Content-Type: application/json
+
+{
+  "username": "ab",
+  "password": "ab",
+  "email": "a@mail.com",
+  "firstname": "a",
+  "lastname": "b",
+  "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/762.jpg"
+}
+
+### Log in an existing user
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpdmVrc2luZ2giLCJwYXNzd29yZCI6IiQyYiQxMCR2NzhTTnZBZ0Z0Z3huNWZJNUh3RlZldkw0N2I2aFlsU0ZoSEU3SEJwMUtiMnhhY040QzcuNiIsImVtYWlsIjoidnN0QG1haWwuY29tIiwiZmlyc3RuYW1lIjoiVml2ZWsiLCJsYXN0bmFtZSI6IlRvbWFyIiwiYXZhdGFyIjoiaHR0cHM6Ly9jbG91ZGZsYXJlLWlwZnMuY29tL2lwZnMvUW1kM1c1RHVoZ0hpckxIR1ZpeGk2Vjc2TGhDa1pVejZwbkZ0NUFKQml5dkh5ZS9hdmF0YXIvNzYyLmpwZyIsImNyZWF0ZWRBdCI6MTY3MDQ5NTc2OTMwNCwiaWQiOjUyLCJpYXQiOjE2NzA0OTYwMzksImV4cCI6MTY3MDUwNjgzOX0.HEVhUcBPNvt5GWmRYDnjS5E2a3dzDGYkAA8HiVbknBY
+POST http://localhost:9090/user/login
+Content-Type: application/json
+
+{
+  "username": "abc",
+  "password": "abc"
+}
+
+### access todo's (with our token)
+GET http://localhost:9090/todos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpdmVrc2luZ2giLCJwYXNzd29yZCI6IiQyYiQxMCR2NzhTTnZBZ0Z0Z3huNWZJNUh3RlZldkw0N2I2aFlsU0ZoSEU3SEJwMUtiMnhhY040QzcuNiIsImVtYWlsIjoidnN0QG1haWwuY29tIiwiZmlyc3RuYW1lIjoiVml2ZWsiLCJsYXN0bmFtZSI6IlRvbWFyIiwiYXZhdGFyIjoiaHR0cHM6Ly9jbG91ZGZsYXJlLWlwZnMuY29tL2lwZnMvUW1kM1c1RHVoZ0hpckxIR1ZpeGk2Vjc2TGhDa1pVejZwbkZ0NUFKQml5dkh5ZS9hdmF0YXIvNzYyLmpwZyIsImNyZWF0ZWRBdCI6MTY3MDQ5NTc2OTMwNCwiaWQiOjUyLCJpYXQiOjE2NzA0OTYwMzksImV4cCI6MTY3MDUwNjgzOX0.HEVhUcBPNvt5GWmRYDnjS5E2a3dzDGYkAA8HiVbknBY
+
+### access todo with its id
+GET http://localhost:9090/todos/jOlm9bijJc
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpdmVrc2luZ2giLCJwYXNzd29yZCI6IiQyYiQxMCR2NzhTTnZBZ0Z0Z3huNWZJNUh3RlZldkw0N2I2aFlsU0ZoSEU3SEJwMUtiMnhhY040QzcuNiIsImVtYWlsIjoidnN0QG1haWwuY29tIiwiZmlyc3RuYW1lIjoiVml2ZWsiLCJsYXN0bmFtZSI6IlRvbWFyIiwiYXZhdGFyIjoiaHR0cHM6Ly9jbG91ZGZsYXJlLWlwZnMuY29tL2lwZnMvUW1kM1c1RHVoZ0hpckxIR1ZpeGk2Vjc2TGhDa1pVejZwbkZ0NUFKQml5dkh5ZS9hdmF0YXIvNzYyLmpwZyIsImNyZWF0ZWRBdCI6MTY3MDQ5NTc2OTMwNCwiaWQiOjUyLCJpYXQiOjE2NzA0OTYwMzksImV4cCI6MTY3MDUwNjgzOX0.HEVhUcBPNvt5GWmRYDnjS5E2a3dzDGYkAA8HiVbknBY
+
+### delete todo of id: jOlm9bijJc
+DELETE http://localhost:9090/todos/JhhTIKUUaJ
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpdmVrc2luZ2giLCJwYXNzd29yZCI6IiQyYiQxMCR2NzhTTnZBZ0Z0Z3huNWZJNUh3RlZldkw0N2I2aFlsU0ZoSEU3SEJwMUtiMnhhY040QzcuNiIsImVtYWlsIjoidnN0QG1haWwuY29tIiwiZmlyc3RuYW1lIjoiVml2ZWsiLCJsYXN0bmFtZSI6IlRvbWFyIiwiYXZhdGFyIjoiaHR0cHM6Ly9jbG91ZGZsYXJlLWlwZnMuY29tL2lwZnMvUW1kM1c1RHVoZ0hpckxIR1ZpeGk2Vjc2TGhDa1pVejZwbkZ0NUFKQml5dkh5ZS9hdmF0YXIvNzYyLmpwZyIsImNyZWF0ZWRBdCI6MTY3MDQ5NTc2OTMwNCwiaWQiOjUyLCJpYXQiOjE2NzA0OTYwMzksImV4cCI6MTY3MDUwNjgzOX0.HEVhUcBPNvt5GWmRYDnjS5E2a3dzDGYkAA8HiVbknBY
+
+### Just want to toggle completed for JhhTIKUUaJ
+PATCH http://localhost:9090/todos/DuwjWf8Vfp
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpdmVrc2luZ2giLCJwYXNzd29yZCI6IiQyYiQxMCR2NzhTTnZBZ0Z0Z3huNWZJNUh3RlZldkw0N2I2aFlsU0ZoSEU3SEJwMUtiMnhhY040QzcuNiIsImVtYWlsIjoidnN0QG1haWwuY29tIiwiZmlyc3RuYW1lIjoiVml2ZWsiLCJsYXN0bmFtZSI6IlRvbWFyIiwiYXZhdGFyIjoiaHR0cHM6Ly9jbG91ZGZsYXJlLWlwZnMuY29tL2lwZnMvUW1kM1c1RHVoZ0hpckxIR1ZpeGk2Vjc2TGhDa1pVejZwbkZ0NUFKQml5dkh5ZS9hdmF0YXIvNzYyLmpwZyIsImNyZWF0ZWRBdCI6MTY3MDQ5NTc2OTMwNCwiaWQiOjUyLCJpYXQiOjE2NzA0OTYwMzksImV4cCI6MTY3MDUwNjgzOX0.HEVhUcBPNvt5GWmRYDnjS5E2a3dzDGYkAA8HiVbknBY
+
+{
+  "completed": true
+}

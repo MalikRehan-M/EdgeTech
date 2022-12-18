@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/skeleton.css">
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Student Database</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h1>Title here</h1>
+          <p>Description here if required.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns four sidebar-one" id="sidebar-one">
+          <h4>Actions</h4>
+          <button id="fetch-ingredient"  class="u-full-width button button-primary" >Fetch Ingredients</button>
+          <button id="fetch-employees"  class="u-full-width button button-primary" >Fetch Employees</button>
+          <hr>
+
+          <h4>Add Employee</h4>
+          <input type="text" id="employee-name" class="u-full-width" placeholder="Name" />
+          <input type="text" id="employee-image" class="u-full-width" placeholder="Image Url" />
+          <input type="number" id="employee-dept" class="u-full-width" placeholder="Department" />
+          <input type="number" id="employee-salary" class="u-full-width" placeholder="Salary" />
+          <button id="add-employee" class="u-full-width button button-primary">Add Employee</button>
+          <hr>
+
+          <h4>Add or update Employee</h4>
+          <input type="text" id="update-employee-id" class="u-full-width" placeholder="ID" />
+          <input type="text" id="update-employee-name" class="u-full-width" placeholder="Name" />
+          <input type="text" id="update-employee-image" class="u-full-width" placeholder="Image Url" />
+          <input type="number" id="update-employee-dept" class="u-full-width" placeholder="Department" />
+          <input type="number" id="update-employee-salary" class="u-full-width" placeholder="Salary" />
+          <button id="update-employee" class="u-full-width button button-primary">Add / Update Employee</button>
+          <hr>
+
+
+          <h4>update Salary</h4>
+          <input type="text" id="update-score-employee-id" class="u-full-width" placeholder="ID" />
+          <input type="number" id="update-score-employee-salary" class="u-full-width" placeholder="Salary" />
+          <button id="update-score-employee" class="u-full-width button button-primary">Update Employee Salary</button>
+          <hr>
+
+
+          <h4>Sort Based On Score</h4>
+          <button id="sort-low-to-high"  class="u-full-width button button-primary" placeholder="Student Name" >Sort Low To High</button>
+          <button id="sort-high-to-low"  class="u-full-width button button-primary" placeholder="Student Name" >Sort High To Low</button>
+          <hr>
+  
+          <h4>Filter By Score</h4>
+          <button id="greater-than"  class="u-full-width button button-primary" placeholder="Student Name" >Score >= 5</button>
+          <button id="less-than"  class="u-full-width button button-primary" placeholder="Student Name" >Score < = 5</button>
+          <hr>
+
+        </div>
+          <div class="columns eight main">
+            <div class="data-list-wrapper" id="data-list-wrapper"></div>
+            <div class="pagination-wrapper" id="pagination-wrapper">Pagination</div>
+          </div>
+      </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
