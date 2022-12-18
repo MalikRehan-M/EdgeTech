@@ -88,6 +88,8 @@ i{
     margin-top: 10px;
     align-items: center;
 }
+/* ----------------------------------------------------------------Main ssection-------------------------------------------------------------- */
+
 
 #topsection{
     width: 100%;
@@ -116,7 +118,7 @@ i{
     margin-bottom: 20px;
     line-height: 25px;
 }
-#topsectionleft>button:nth-child(4){
+#topsectionleft>a:nth-child(4) button{
     padding: 18px 65px 18px 65px;
     border: 0px;
     border-radius: 4px;
@@ -126,7 +128,17 @@ i{
     color:rgb(82, 82, 82);
     margin-right: 10px;
 }
-#topsectionleft>button:nth-child(5){
+#topsectionleft>a:nth-child(4) button:focus(){
+    padding: 18px 65px 18px 65px;
+    border: 0px;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+    color:rgb(82, 82, 82);
+    margin-right: 10px;
+}
+#topsectionleft>a:nth-child(5) button{
     padding: 18px 55px 18px 55px;
     border: 1px solid white;
     border-radius: 4px;
@@ -134,6 +146,15 @@ i{
     font-size: 18px;
     color:white;
 }
+#topsectionleft>a:nth-child(5) button:focus(){
+    padding: 18px 55px 18px 55px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: #ff5c35;
+    font-size: 18px;
+    color:white;
+}
+
 #topsectionleft>p:nth-child(6){
     font-size: 15px;
     font-weight: 600;
@@ -533,7 +554,7 @@ i{
     transition: 0.6s;
 }
 
-
+/* ---------------------------------------------------------------------------high contrast------------------------------------------------------------------- */
 
 #bluebtn{
     padding: 10px 35px 10px 35px;

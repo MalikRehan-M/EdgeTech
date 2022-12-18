@@ -1,0 +1,83 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cont{
+    width: 21%;
+    margin: auto;
+    letter-spacing: 0.7px;
+}
+form>label{
+    font-size: 15px;
+    opacity: 90%;
+}
+#cont>div:nth-child(1){
+    text-align: center;
+    opacity: 90%;
+}
+#forgetpass{
+    color: #0091ae;
+}
+#cont>div:nth-child(3){
+    margin-top: 300px;
+    text-align: center;
+}
+.input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #cbd6e2;
+    background-color: #f5f8fa;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#checkbox{
+  margin-right: 15px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+#loginbtn{
+    width: 106%;
+    padding: 12px;
+    background-color: #ff7a58;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#googlebtn{
+    width: 106%;
+    padding: 12px;
+    background-color: rgb(95, 130, 220);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#googlebtn>i{
+    margin-right: 30px;
+}
+hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 106%;
+    opacity: 60%;
+}
+#ssobtn{
+    margin-top: 20px;
+    width: 106%;
+    padding: 12px;
+    background-color: #304b62;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#logo{
+    width: 180px;
+}
+a{
+    text-decoration: none;
+    color: #0091ae;
+}
