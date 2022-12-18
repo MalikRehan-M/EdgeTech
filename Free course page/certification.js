@@ -31,8 +31,8 @@ fetchData(1);
          h5.setAttribute("class","lesson")
          let span= document.createElement("span");
          span.setAttribute("class","hours")
-         span.innerText=` ${ele.hours} hours`
-         h5.innerText= `${ele.lessons} lessons`
+         span.innerText=` ${ele.hours}`
+         h5.innerText= `${ele.lessons}`
          let p=document.createElement("p");
          p.innerText=ele.description.substring(0,75) + '...';
          let read= document.createElement("h5");

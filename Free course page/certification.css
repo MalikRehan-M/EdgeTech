@@ -112,6 +112,7 @@ color: black;
 .hours{
     font-weight: bold;
     color: #2dcbd1;
+    margin-left: 10px;
 }
 .lesson{
     display:inline;
