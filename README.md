@@ -17,3 +17,6 @@ https://639ac82bd5141501973ed8b0.mockapi.io/edgeTech/courses
 #Admin Credentials 
 email : admin@edgetech.com
 pass : adminedgetech
+
+#Frontend deploy link
+https://cosmic-sprinkles-6ae42e.netlify.app/index.html
