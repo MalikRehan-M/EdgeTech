@@ -20,3 +20,11 @@ pass : adminedgetech
 
 #Frontend deploy link
 https://cosmic-sprinkles-6ae42e.netlify.app/index.html
+
+
+
+
+# Demo
+
+
+https://user-images.githubusercontent.com/112761880/216763425-cc529c27-c0c7-4f36-b5aa-d94ae01cc8f8.mp4
