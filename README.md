@@ -9,7 +9,7 @@
 
 
 # Cyclic Server Link
-https://delightful-puce-coyote.cyclic.app/users
+https://real-crab-pleat.cyclic.app/users
  
 # Mock-Api link
 https://639ac82bd5141501973ed8b0.mockapi.io/edgeTech/courses
