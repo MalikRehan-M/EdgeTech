@@ -1,4 +1,9 @@
-# arrogant-change-8923
+# EdgeTech
+
+## About
+As a CRM-based application, Edge Tech provides businesses with a centralized platform for managing their customer interactions and relationships.Overall, Edge Tech is a powerful tool for businesses looking to improve their customer relationship management and drive growth.
+
+
 # Team Of Five Members,
 1. Tushar Gandhi <br>
 2. Ejajul Ansari <br>
